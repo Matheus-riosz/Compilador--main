@@ -1,0 +1,56 @@
+{ ===== ALFABETO MICRO-PASCAL ===== }
+{ Letras: a..z, A..Z }
+{ Dígitos: 0..9 }
+{ Símbolos: + - * / := ; . , ( ) : }
+{ Palavras reservadas: program var begin end integer real while do }
+
+{ ===== PROGRAMA 1 CORRETO ===== }
+program Ex1;
+var x, y : integer;
+begin
+x := 10;
+y := 20;
+end.
+
+{ ===== PROGRAMA 2 CORRETO ===== }
+program Ex2;
+var a, b, c : real;
+begin
+a := 1.5;
+b := a * 2;
+c := a + b / 3;
+end.
+
+{ ===== PROGRAMA 3 CORRETO ===== }
+program Ex3;
+var i : integer;
+begin
+i := 0;
+while i < 5 do
+i := i + 1;
+end.
+
+{ ===== PROGRAMA 4 ERRADO ===== }
+program Err1
+var x y : integer;
+begin
+x := 10
+y := 20;
+end.
+
+{ ===== PROGRAMA 5 ERRADO ===== }
+program Err2;
+var a, b : real;
+begin
+a := 1.5;
+b := a ** 2; { operador inválido ** }
+end.
+
+{ ===== PROGRAMA 6 ERRADO ===== }
+program Err3;
+var i : integer;
+begin
+i := 0;
+while i < 5 do
+i := i + 1
+end
